@@ -60,6 +60,7 @@ SWIFT_FILES=(
 
 # 编译
 swiftc "${SWIFT_FILES[@]}" \
+    -target arm64-apple-macos13.0 \
     -o "${MACOS_DIR}/${APP_NAME}" \
     -framework AppKit \
     -framework SwiftUI \
