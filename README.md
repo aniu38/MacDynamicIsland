@@ -37,7 +37,8 @@
 
 ### 方式一：下载即用安装包 (推荐)
 直接下载本项目发布的便携压缩包：
-- 👉 **[下载 MacDynamicIsland-Installer.zip (27 MB)](MacDynamicIsland-Installer.zip)**
+- 🚀 **[GitHub Releases 高速下载 MacDynamicIsland-Installer.zip (27 MB)](https://github.com/aniu38/MacDynamicIsland/releases/download/v1.0.0/MacDynamicIsland-Installer.zip)**
+- 📦 **[仓库内源文件下载 (MacDynamicIsland-Installer.zip)](MacDynamicIsland-Installer.zip)**
 
 **安装方法：**
 1. 解压 `MacDynamicIsland-Installer.zip`；
