@@ -98,15 +98,27 @@ cat <<EOF > "${CONTENTS_DIR}/Info.plist"
 </plist>
 EOF
 
-echo "📦 打包发布 SPlayer UI 直抓版安装包..."
+echo "📦 打包发布 Mac 灵动岛拖拽安装镜像 (DMG)..."
 
 rm -rf "${PROJECT_DIR}/${APP_NAME}.app"
 cp -R "${APP_DIR}" "${PROJECT_DIR}/${APP_NAME}.app"
 
 cd "${PROJECT_DIR}"
-rm -f "MacDynamicIsland-Installer.zip"
-zip -r -q "MacDynamicIsland-Installer.zip" "${APP_NAME}.app"
+DMG_STAGING="/tmp/dmg_staging_$$"
+rm -rf "${DMG_STAGING}"
+mkdir -p "${DMG_STAGING}"
+cp -R "${APP_NAME}.app" "${DMG_STAGING}/"
+ln -s /Applications "${DMG_STAGING}/Applications"
 
-echo "🎉 SPlayer UI 直抓版灵动岛已成功编译打出！"
+rm -f "MacDynamicIsland-Installer.dmg"
+hdiutil create \
+  -volname "Mac 灵动岛 安装器" \
+  -srcfolder "${DMG_STAGING}" \
+  -ov \
+  -format UDZO \
+  "MacDynamicIsland-Installer.dmg"
+rm -rf "${DMG_STAGING}"
+
+echo "🎉 Mac 灵动岛 DMG 安装包已成功打包打出！"
 echo "  - 应用路径: ${PROJECT_DIR}/${APP_NAME}.app"
-echo "  - 安装包路径: ${PROJECT_DIR}/MacDynamicIsland-Installer.zip"
+echo "  - DMG 安装包路径: ${PROJECT_DIR}/MacDynamicIsland-Installer.dmg"

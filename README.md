@@ -35,15 +35,15 @@
 
 ## 📦 快速下载与安装
 
-### 方式一：下载即用安装包 (推荐)
-直接下载本项目发布的便携压缩包：
-- 🚀 **[GitHub Releases 高速下载 MacDynamicIsland-Installer.zip (27 MB)](https://github.com/aniu38/MacDynamicIsland/releases/download/v1.0.0/MacDynamicIsland-Installer.zip)**
-- 📦 **[仓库内源文件下载 (MacDynamicIsland-Installer.zip)](MacDynamicIsland-Installer.zip)**
+### 方式一：下载即用 DMG 安装包 (推荐)
+直接下载本项目发布的标准 Apple 磁盘镜像 (.dmg) 安装包：
+- 🚀 **[GitHub Releases 高速下载 MacDynamicIsland-Installer.dmg (27 MB)](https://github.com/aniu38/MacDynamicIsland/releases/download/v1.0.0/MacDynamicIsland-Installer.dmg)**
+- 📦 **[仓库内源文件下载 (MacDynamicIsland-Installer.dmg)](MacDynamicIsland-Installer.dmg)**
 
 **安装方法：**
-1. 解压 `MacDynamicIsland-Installer.zip`；
-2. 将 `MacDynamicIsland.app` 拖入 `/Applications` (应用程序) 文件夹；
-3. 双击打开即可立即享受屏幕顶端的灵动体验！
+1. 双击下载的 `MacDynamicIsland-Installer.dmg` 挂载磁盘镜像；
+2. 在打开的窗口中，直接将 **MacDynamicIsland** 应用图标拖拽至 **Applications** 快捷文件夹中；
+3. 打开 `/Applications` 或启动台 (Launchpad) 双击运行即可！
 
 > [!TIP]
 > 首次打开若系统提示“来自未受信任的开发者”，请在 **系统设置 > 隐私与安全性** 中点击 **“仍要打开”** 即可。
